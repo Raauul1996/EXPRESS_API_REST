@@ -1,0 +1,26 @@
+### Recuperar todos los libros
+GET http://localhost:4321/api/books
+
+### Recuperar un libro
+GET http://localhost:4321/api/books/2
+
+### Recuperar todos los libros por author
+GET http://localhost:4321/api/books?author=J. R. R. Tolkien
+
+### Crear un libro
+POST http://localhost:4321/api/books
+Content-Type: application/json
+
+ {
+    "title": "Harry Potter y la piedra filosofal",
+    "author": "J. K. Rowling",
+    "photo": "https://musicart.xboxlive.com/7/5dbd5100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+}
+
+### Actualizar un elemento de un libro.
+PATCH http://localhost:4321/api/books/2
+Content-Type: application/json
+
+{
+    "title":"El señor de los anillos: La comunidad del anillo"
+}
