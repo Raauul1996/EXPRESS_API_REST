@@ -8,6 +8,6 @@ initializeApp({
 
 const db = getFirestore();
 
-module.exports({
+module.exports = {
     db
-})
+}
