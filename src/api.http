@@ -2,25 +2,25 @@
 GET http://localhost:4321/books
 
 ### Recuperar un libro
-GET http://localhost:4321/books/2
-
-### Recuperar todos los libros por author
-GET http://localhost:4321/books?author=J. R. R. Tolkien
+GET http://localhost:4321/books/1
 
 ### Crear un libro
 POST http://localhost:4321/books
 Content-Type: application/json
 
  {
-    "title": "Harry Potter y la piedra filosofal",
-    "author": "J. K. Rowling",
-    "photo": "https://musicart.xboxlive.com/7/5dbd5100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+    "title": "El señor de los anillos: La comunidad del anillo",
+    "author": "J. R. R. Tolkien",
+    "photo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsomad4jdC2GDu3ACxAkRmziK946tKqo9Qib77Quq297HstON6"
 }
 
 ### Actualizar un elemento de un libro.
-PATCH http://localhost:4321/books/2
+PUT http://localhost:4321/books/im82p5udXJtMAUE95gTK
 Content-Type: application/json
 
 {
-    "title":"El señor de los anillos: La comunidad del anillo"
+    "title":"El señor de los anillos: La Comunidad del Anillo"
 }
+
+### Borrar un libro
+DELETE http://localhost:4321/books/1
