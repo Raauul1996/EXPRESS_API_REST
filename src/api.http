@@ -1,0 +1,26 @@
+### Recuperar todos los libros
+GET http://localhost:4321/books
+
+### Recuperar un libro
+GET http://localhost:4321/books/1
+
+### Crear un libro
+POST http://localhost:4321/books
+Content-Type: application/json
+
+ {
+    "title": "El señor de los anillos: La comunidad del anillo",
+    "author": "J. R. R. Tolkien",
+    "photo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsomad4jdC2GDu3ACxAkRmziK946tKqo9Qib77Quq297HstON6"
+}
+
+### Actualizar un elemento de un libro.
+PUT http://localhost:4321/books/im82p5udXJtMAUE95gTK
+Content-Type: application/json
+
+{
+    "title":"El señor de los anillos: La Comunidad del Anillo"
+}
+
+### Borrar un libro
+DELETE http://localhost:4321/books/1
