@@ -3,7 +3,8 @@ const z = require('zod')
 const bookSchema = z.object({
     title: z.string(),
     author: z.string(),
-    photo: z.string().url()
+    photo: z.string().url(),
+    description: z.string()
 })
 
 function validateBook (book) {
