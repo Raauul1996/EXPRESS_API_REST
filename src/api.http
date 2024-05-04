@@ -5,13 +5,13 @@ GET http://localhost:4321/books
 GET http://localhost:4321/books/1
 
 ### Crear un libro
-POST http://localhost:4321/books
+POST https://express-api-rest.onrender.com/books
 Content-Type: application/json
 
  {
-    "title": "El señor de los anillos: La comunidad del anillo",
+    "title": "El señor de los anillos: Las Dos Torres",
     "author": "J. R. R. Tolkien",
-    "photo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsomad4jdC2GDu3ACxAkRmziK946tKqo9Qib77Quq297HstON6"
+    "photo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.esquire.com%2Fes%2Factualidad%2Flibros%2Fa40877076%2Fsenor-de-los-anillos-orden-libros-tolkien%2F&psig=AOvVaw0hUdNiYaAhcCwnstoHMNLq&ust=1714927319708000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjYt6C49IUDFQAAAAAdAAAAABAX"
 }
 
 ### Actualizar un elemento de un libro.
