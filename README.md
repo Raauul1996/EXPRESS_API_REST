@@ -10,7 +10,6 @@ Este proyecto es una API REST desarrollada con Node.js para consultar informaci�
 - **dotenv**: Módulo para cargar variables de entorno en aplicaciones Node.js.
 - **zod**: Biblioteca para validación de esquemas de datos en JavaScript.
 
-Este proyecto proporciona una solución backend robusta y segura para la gestión de información sobre libros a través de una API REST.
 ## Configuración
 
 Antes de ejecutar la aplicación, asegúrate de configurar las siguientes variables de entorno:
